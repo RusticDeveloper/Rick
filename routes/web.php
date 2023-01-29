@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\GitPortfolioController;
+use App\Http\Controllers\RyMController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,12 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('rickym');
-})->name('home');
+Route::get('/', [RyMController::class ,'index'])->name('home');
 
-Route::get('/portfolio', function () {
-    return view('portfolio');
-})->name('portfolio');
+Route::get('/portfolio', [GitPortfolioController::class,'index'])->name('portfolio');
 
 // Route::view("","")->name();

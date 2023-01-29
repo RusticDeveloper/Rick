@@ -6,5 +6,8 @@ use Illuminate\Http\Request;
 
 class GitPortfolioController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('portfolio');
+    }
 }
