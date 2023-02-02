@@ -15,7 +15,8 @@ use App\Http\Controllers;
 |
 */
 
-Route::get('/', [RyMController::class ,'index'])->name('home');
+Route::get('/', [RyMController::class ,'index'])->name('home.index');
+Route::post('/', [RyMController::class ,'show'])->name('home.show');
 
 Route::get('/portfolio', [GitPortfolioController::class,'index'])->name('portfolio');
 

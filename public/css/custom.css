@@ -1,0 +1,71 @@
+/* All files */
+body {
+    background-color: rgb(23, 13, 29);
+}
+.active a {
+    color: Red;
+    text-decoration: none;
+}
+nav > ul {
+    display: flex;
+    align-items: center;
+    font-size: xx-large;
+    font-weight: 700;
+    color: tomato;
+    justify-content: space-around;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* home index-show views */
+.bg-img-portal{
+    background-image: url('../storage/portal.gif');
+    background-size: cover;
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: 900;
+    height: 90vh;
+}
+.card-style{
+    color: purple;
+    font-weight: 500;
+    font-size: 1.em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    float: left;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+.card-img-size{
+    width: 40vw;
+    height: 50vh;
+}
+.rigth-side-card{
+    float: right;
+    color: black;
+    font-size: 1em;
+    width: 45vw;
+    margin-right: 2%;
+    margin-top: 5%;
+}
+
+
+.gridy{
+    display: grid;
+    grid-template: 150px /auto auto;
+}
+.gridy > div{
+    border-color: black;
+    border-radius: 5%;
+    border-width: thin;
+    margin: 5%;
+}
+.gridy > div > p{
+    font-style: italic oblique;
+    color: rgb(156, 18, 18);
+    font-size: .7em;
+}
+/* Portfolio view */
+
+.git-card{
+    width: 60%;
+    margin: 3%;
+}

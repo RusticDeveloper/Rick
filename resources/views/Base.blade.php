@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,9 @@
     <link href="{{ asset('vendor/bladewind/css/bladewind-ui.min.css') }}" rel="stylesheet" />
     <script src="{{ asset('vendor/bladewind/js/helpers.js') }}"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
     <title>Rick&Morty Characters</title>
-    <style>
-        .active a {
-            color: Red;
-            text-decoration: none;
-        }
 
-    </style>
 </head>
 
 <body>

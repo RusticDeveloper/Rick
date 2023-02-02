@@ -15,6 +15,8 @@
     'footer' => null,
     // additional css
     'class' => null,
+    // background of the card
+    'background' => null,
 ])
 @php
     // reset variables for Laravel 8 support
@@ -37,5 +39,8 @@
         <div class="border-t border-gray-100/30">
             {{$footer}}
         </div>
+    @endif
+    @if($background!==null)
+        
     @endif
 </div>

@@ -1,6 +1,10 @@
 <nav>
     <ul>
-        <li class="{{ setActive("home") }}"><a href="/">Rick And Morty Characters</a></li>
-        <li class="{{ setActive("portfolio") }}"><a href="/portfolio">PortFolio</a></li>
+        @if(request()->routeIs('home.show'))
+            <li class="{{ setActive("home.show") }}"><a href="{{route('home.show')}}">Rick And Morty Characters</a></li>
+        @else
+            <li class="{{ setActive("home.index") }}"><a href="{{route('home.index')}}">Rick And Morty Characters</a></li>
+        @endif
+            <li class="{{ setActive("portfolio") }}"><a href="{{route('portfolio')}}">PortaFolio</a></li>
     </ul>
 </nav>
